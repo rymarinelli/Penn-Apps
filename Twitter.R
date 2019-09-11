@@ -17,10 +17,10 @@ if (length(new.pkg)) {
 
 
 library(twitteR)
-api_key <- "fOP5NTozqjGsbTAMsGR0nWYq0"
-api_secret <- "7NpNb1TTBF0VGeDCoEhFq2fhvuqjb0seYnP3d58BFO4nHQMeha"
-token <- "1161997375336062977-zmC4VqMM0TMHiRONMwOmLMYSTc2u3g"
-token_secret <- "MRlSdoIKYg81YiP0s5kN7jsi6s2DIIfMqMFYz3klrdqFS"
+api_key <- "Removed for Privacy" 
+api_secret <- "Removed for Privacy" 
+token <- "Removed for Privacy" 
+token_secret <- "Removed for Privacy" 
 
 
 setup_twitter_oauth(api_key, api_secret, token, token_secret)
