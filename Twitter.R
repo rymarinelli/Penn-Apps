@@ -65,19 +65,15 @@ tfidf <- weightTfIdf(tdm)
 lsa.tfidf <- lsa(tfidf)
 words.df <- as.data.frame(as.matrix(lsa.tfidf$dk))
 
-}
 
-second <- function(created)
-{
 
 library(lubridate)
 
 created <- ymd_hms(created)
 created <- diff.POSIXt(created) 
 created <- abs(created)/60
-}
 
-Third <- function(NewData){
+
 
 newData <- cbind(test.DF$retweetCount, test.DF$favoriteCount) 
 newData <- cbind(newData, created)
@@ -93,13 +89,13 @@ colnames(newData) <- c("retweets", "favorite Count", "time", "LSA One","LSA Two"
 
 model.3 <- lm(retweetCount ~ time + time*`favorite Count`+ `LSA One`+ `LSA Two` + `LSA Three` , data = newData) 
 model.3
-}
 
 
-library(ggplot2)
 
-jpeg("Linear Model 2.jpeg")
-plot(model.3)
+#library(ggplot2)
+
+#jpeg("Linear Model 2.jpeg")
+#plot(model.3)
 
 # par(mfrow=c(2,2)
 
@@ -107,7 +103,7 @@ plot(model.3)
 # Step 3: Run dev.off() to create the file!
 # dev.off()
 
-Twitter(hoangvo1312)
+#Twitter(hoangvo1312)
 
 
 
